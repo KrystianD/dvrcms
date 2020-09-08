@@ -1,0 +1,9 @@
+[submodule "nativelib"]
+	path = nativelib
+	url = git@github.com:KrystianD/nativelib.git
+[submodule "crosslib"]
+	path = crosslib
+	url = git@github.com:KrystianD/crosslib.git
+[submodule "libkdav"]
+	path = libkdav
+	url = git@github.com:KrystianD/libkdav.git

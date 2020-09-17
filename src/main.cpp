@@ -77,7 +77,12 @@ int main(int argc, char** argv)
 	cms.connect(ip, port, user, pass, channel);
 	cms.addToEpoll(epoll);
 
+	stringstream ss;
+	ss << ip << ", ch: " << channel;
 	SDL_Init(SDL_INIT_VIDEO);
+	string title = ss.str();
+	SDL_WM_SetCaption(title.c_str(), nullptr);
+
 	SDL_Overlay* overlay = nullptr;
 
 	KDAVFrame frame;
@@ -111,7 +116,7 @@ int main(int argc, char** argv)
 
 					if (hasFrame) {
 						if (debug)
-							printf("Decoded H264 frame of size: %dx%d\n",   frame.getWidth(), frame.getHeight());
+							printf("Decoded H264 frame of size: %dx%d\n", frame.getWidth(), frame.getHeight());
 
 						auto sizes = frame.getLineSizes();
 						if (!overlay) {

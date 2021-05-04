@@ -1,7 +1,7 @@
 DVRCMS
 ======
 
-SDL based video preview tool for Chinese digital video recorders (DVR) similar to [this one](https://www.aliexpress.com/item/32828699353.html). Usually, they use port 34567.
+SDL based video preview tool for Chinese digital video recorders (DVR) similar to [this one](https://www.aliexpress.com/item/32828699353.html). Usually, they use port 34567 and can be used with CMS software.
 
 ### Compilation
 
